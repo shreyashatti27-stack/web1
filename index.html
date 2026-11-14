@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital House Tax Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            🏠 Digital House Tax
+        </div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#tax">Pay Tax</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Digital House Tax Collection System</h1>
+            <p>
+                Pay your property tax online easily, securely
+                and conveniently.
+            </p>
+            <a href="#tax" class="btn">Pay House Tax</a>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+
+        <div class="service-container">
+
+            <div class="service-card">
+                <h3>🏠 Property Details</h3>
+                <p>View your house and property information.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>💰 Tax Payment</h3>
+                <p>Pay your house tax through digital payment.</p>
+            </div>
+
+            <div class="service-card">
+                <h3>📄 Payment Receipt</h3>
+                <p>Get your tax payment receipt online.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Tax Payment -->
+    <section class="tax-section" id="tax">
+        <h2>House Tax Payment</h2>
+
+        <form class="tax-form">
+
+            <label>Citizen Name</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Property ID</label>
+            <input type="text" placeholder="Enter property ID" required>
+
+            <label>House Address</label>
+            <textarea placeholder="Enter house address"></textarea>
+
+            <label>Mobile Number</label>
+            <input type="tel" placeholder="Enter mobile number" required>
+
+            <label>Tax Amount (₹)</label>
+            <input type="number" placeholder="Enter tax amount" required>
+
+            <label>Payment Method</label>
+            <select required>
+                <option value="">Select Payment Method</option>
+                <option>UPI</option>
+                <option>Debit Card</option>
+                <option>Credit Card</option>
+                <option>Net Banking</option>
+            </select>
+
+            <button type="submit">Pay Now</button>
+
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <h3>Digital House Tax Collection</h3>
+        <p>Municipal Corporation | Online Tax Services</p>
+        <p>Email: support@housetax.com</p>
+        <p>© 2026 Digital House Tax System. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

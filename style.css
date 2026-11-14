@@ -1,0 +1,205 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f7fb;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #123c69;
+    color: white;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #ffcc66;
+}
+
+/* Hero */
+.hero {
+    height: 400px;
+    background: linear-gradient(
+        rgba(0, 30, 70, 0.75),
+        rgba(0, 30, 70, 0.75)
+    ),
+    url("https://images.unsplash.com/photo-1600596542815-ffad4c1539a9")
+    center/cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #ffb703;
+    color: #123c69;
+    padding: 13px 28px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: white;
+}
+
+/* Services */
+.services {
+    padding: 55px 8%;
+    text-align: center;
+}
+
+.services h2,
+.tax-section h2 {
+    font-size: 30px;
+    margin-bottom: 35px;
+    color: #123c69;
+}
+
+.service-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.service-card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #00000015;
+    flex: 1;
+}
+
+.service-card h3 {
+    color: #123c69;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    line-height: 1.6;
+}
+
+/* Tax Form */
+.tax-section {
+    padding: 50px 20px;
+    text-align: center;
+    background: #eaf1f8;
+}
+
+.tax-form {
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 3px 15px #00000015;
+}
+
+.tax-form label {
+    display: block;
+    margin: 15px 0 7px;
+    font-weight: bold;
+}
+
+.tax-form input,
+.tax-form textarea,
+.tax-form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.tax-form input:focus,
+.tax-form textarea:focus,
+.tax-form select:focus {
+    border-color: #123c69;
+}
+
+.tax-form textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+.tax-form button {
+    width: 100%;
+    padding: 14px;
+    background: #123c69;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 25px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.tax-form button:hover {
+    background: #1c5b96;
+}
+
+/* Footer */
+footer {
+    background: #123c69;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+    line-height: 2;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav a {
+        margin: 8px;
+        display: inline-block;
+    }
+
+    .hero-content h1 {
+        font-size: 27px;
+    }
+
+    .service-container {
+        flex-direction: column;
+    }
+}
